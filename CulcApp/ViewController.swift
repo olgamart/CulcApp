@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     var currentInput: Double {
         
         get {
+            
             str = resLabel.text!
             strArray = str.components(separatedBy: ",")
             if strArray.count>1 {str = strArray[0] + "." + strArray[1]}
