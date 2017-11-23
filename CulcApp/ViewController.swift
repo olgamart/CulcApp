@@ -24,11 +24,12 @@ class ViewController: UIViewController {
     var equalButtonPressed = false
     
     
+    
     var currentInput: Double {
         
         get {
-            
-            str = resLabel.text!
+            if resLabel.text != "Not a number" {str = resLabel.text!} else {str = "0"}
+        //    str = resLabel.text!
             strArray = str.components(separatedBy: ",")
             if strArray.count>1 {str = strArray[0] + "." + strArray[1]}
             return Double(str)!
@@ -75,7 +76,9 @@ class ViewController: UIViewController {
         
     
     @IBAction func mathButton(_ sender: UIButton) {
+        
         operationSign = sender.currentTitle!
+        
         firsOperand = currentInput
         firstNul = false
         dotIsPlaced = false
@@ -93,11 +96,15 @@ class ViewController: UIViewController {
             case "+": currentInput = firsOperand + secondOperand
             case "-": currentInput = firsOperand - secondOperand
             case "×": currentInput = firsOperand * secondOperand
-            case "÷": if secondOperand == 0.0 {resLabel.text = "Not a number"} else{ currentInput = firsOperand / secondOperand}
+            case "÷": if secondOperand == 0 {
+                resLabel.text = "Not a number"
+                firstNul = false
+                
+            } else{ currentInput = firsOperand / secondOperand}
         default: break
         }
         if !equalButtonPressed{
-        firsOperand = 0
+      //  firsOperand = 0
         firstNul = false
         equalButtonPressed = true
     }

@@ -70,7 +70,6 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="equalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4m-G3-ZcV"/>
                                             <action selector="mathButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6fK-Yq-zTM"/>
                                         </connections>
                                     </button>
@@ -115,7 +114,6 @@
                                             <color key="titleColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="equalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bsm-iV-X6X"/>
                                             <action selector="mathButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMC-v9-f4a"/>
                                         </connections>
                                     </button>
@@ -149,7 +147,6 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="equalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Wc-Ue-BcT"/>
                                             <action selector="mathButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="myh-ew-7Iy"/>
                                         </connections>
                                     </button>
@@ -194,7 +191,6 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="equalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTH-0M-wxl"/>
                                             <action selector="mathButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwr-BI-2tr"/>
                                         </connections>
                                     </button>
